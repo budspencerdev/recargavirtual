@@ -1,0 +1,122 @@
+ERROR - 2023-06-19 06:32:56 --> mysqli_sql_exception: Table 'dbrecargavirtual.usuario' doesn't exist in /Users/budspencerdev/informacion/Proyectos/www/codeigniter/system/Database/MySQLi/Connection.php:295
+Stack trace:
+#0 /Users/budspencerdev/informacion/Proyectos/www/codeigniter/system/Database/MySQLi/Connection.php(295): mysqli->query('SELECT *\nFROM `...', 0)
+#1 /Users/budspencerdev/informacion/Proyectos/www/codeigniter/system/Database/BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 /Users/budspencerdev/informacion/Proyectos/www/codeigniter/system/Database/BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 /Users/budspencerdev/informacion/Proyectos/www/codeigniter/system/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 /Users/budspencerdev/informacion/Proyectos/www/codeigniter/system/Model.php(268): CodeIgniter\Database\BaseBuilder->get()
+#5 /Users/budspencerdev/informacion/Proyectos/www/codeigniter/system/BaseModel.php(656): CodeIgniter\Model->doFirst()
+#6 /Users/budspencerdev/informacion/Proyectos/www/codeigniter/app/Controllers/LoginController.php(27): CodeIgniter\BaseModel->first()
+#7 /Users/budspencerdev/informacion/Proyectos/www/codeigniter/system/CodeIgniter.php(934): App\Controllers\LoginController->login()
+#8 /Users/budspencerdev/informacion/Proyectos/www/codeigniter/system/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoginController))
+#9 /Users/budspencerdev/informacion/Proyectos/www/codeigniter/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 /Users/budspencerdev/informacion/Proyectos/www/codeigniter/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2023-06-19 06:32:56 --> Table 'dbrecargavirtual.usuario' doesn't exist
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 295.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(295): mysqli->query('SELECT *
+FROM `usuario`
+WHERE `username` = \'juan\'
+ LIMIT 1', 0)
+ 2 SYSTEMPATH/Database/BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `usuario`
+WHERE `username` = \'juan\'
+ LIMIT 1')
+ 3 SYSTEMPATH/Database/BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `usuario`
+WHERE `username` = \'juan\'
+ LIMIT 1')
+ 4 SYSTEMPATH/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `usuario`
+WHERE `username` = :username:
+ LIMIT 1', [...], false)
+ 5 SYSTEMPATH/Model.php(268): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH/BaseModel.php(656): CodeIgniter\Model->doFirst()
+ 7 APPPATH/Controllers/LoginController.php(27): CodeIgniter\BaseModel->first()
+ 8 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\LoginController->login()
+ 9 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoginController))
+10 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-19 07:12:40 --> Undefined property: App\Controllers\RecargaController::$movimientosModel
+in APPPATH/Controllers/RecargaController.php on line 41.
+ 1 APPPATH/Controllers/RecargaController.php(41): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\RecargaController::$movimientosModel', '/Users/budspencerdev/informacion/Proyectos/www/codeigniter/app/Controllers/RecargaController.php', 41)
+ 2 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\RecargaController->recharge()
+ 3 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\RecargaController))
+ 4 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-19 07:12:40 --> Undefined property: App\Controllers\RecargaController::$movimientosModel
+in APPPATH/Controllers/RecargaController.php on line 41.
+ 1 APPPATH/Controllers/RecargaController.php(41): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\RecargaController::$movimientosModel', '/Users/budspencerdev/informacion/Proyectos/www/codeigniter/app/Controllers/RecargaController.php', 41)
+ 2 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\RecargaController->recharge()
+ 3 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\RecargaController))
+ 4 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-19 07:12:40 --> Undefined property: App\Controllers\RecargaController::$movimientosModel
+in APPPATH/Controllers/RecargaController.php on line 41.
+ 1 APPPATH/Controllers/RecargaController.php(41): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\RecargaController::$movimientosModel', '/Users/budspencerdev/informacion/Proyectos/www/codeigniter/app/Controllers/RecargaController.php', 41)
+ 2 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\RecargaController->recharge()
+ 3 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\RecargaController))
+ 4 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-19 07:12:58 --> Undefined property: App\Controllers\RecargaController::$movimientosModel
+in APPPATH/Controllers/RecargaController.php on line 41.
+ 1 APPPATH/Controllers/RecargaController.php(41): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\RecargaController::$movimientosModel', '/Users/budspencerdev/informacion/Proyectos/www/codeigniter/app/Controllers/RecargaController.php', 41)
+ 2 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\RecargaController->recharge()
+ 3 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\RecargaController))
+ 4 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-19 07:13:51 --> Undefined variable $fecha
+in APPPATH/Models/MovimientosModel.php on line 17.
+ 1 APPPATH/Models/MovimientosModel.php(17): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $fecha', '/Users/budspencerdev/informacion/Proyectos/www/codeigniter/app/Models/MovimientosModel.php', 17)
+ 2 APPPATH/Controllers/RecargaController.php(43): App\Models\MovimientosModel->insertRecharge('6', 'carga', '100')
+ 3 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\RecargaController->recharge()
+ 4 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\RecargaController))
+ 5 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-19 07:16:56 --> Call to undefined method CodeIgniter\Database\MySQLi\Connection::insert()
+in APPPATH/Models/MovimientosModel.php on line 21.
+ 1 APPPATH/Controllers/RecargaController.php(43): App\Models\MovimientosModel->insertRecharge('4', 'carga', '10')
+ 2 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\RecargaController->recharge()
+ 3 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\RecargaController))
+ 4 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-19 07:19:02 --> Call to undefined method CodeIgniter\Database\MySQLi\Connection::insert()
+in APPPATH/Models/MovimientosModel.php on line 23.
+ 1 APPPATH/Controllers/RecargaController.php(43): App\Models\MovimientosModel->insertRecharge('7', 'carga', '10.0')
+ 2 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\RecargaController->recharge()
+ 3 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\RecargaController))
+ 4 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-19 12:43:06 --> Undefined variable $usuarios
+in APPPATH/Views/list.php on line 111.
+ 1 APPPATH/Views/list.php(111): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $usuarios', '/Users/budspencerdev/informacion/Proyectos/www/codeigniter/app/Views/list.php', 111)
+ 2 SYSTEMPATH/View/View.php(213): include('/Users/budspencerdev/informacion/Proyectos/www/codeigniter/app/Views/list.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1184): CodeIgniter\View\View->render('list', [], true)
+ 5 APPPATH/Controllers/RecargaController.php(54): view('list')
+ 6 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\RecargaController->list()
+ 7 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\RecargaController))
+ 8 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-19 12:44:27 --> Undefined variable $usuarios
+in APPPATH/Views/list.php on line 92.
+ 1 APPPATH/Views/list.php(92): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $usuarios', '/Users/budspencerdev/informacion/Proyectos/www/codeigniter/app/Views/list.php', 92)
+ 2 SYSTEMPATH/View/View.php(213): include('/Users/budspencerdev/informacion/Proyectos/www/codeigniter/app/Views/list.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1184): CodeIgniter\View\View->render('list', [], true)
+ 5 APPPATH/Controllers/RecargaController.php(54): view('list')
+ 6 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\RecargaController->list()
+ 7 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\RecargaController))
+ 8 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-19 12:44:27 --> Undefined variable $usuarios
+in APPPATH/Views/list.php on line 92.
+ 1 APPPATH/Views/list.php(92): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $usuarios', '/Users/budspencerdev/informacion/Proyectos/www/codeigniter/app/Views/list.php', 92)
+ 2 SYSTEMPATH/View/View.php(213): include('/Users/budspencerdev/informacion/Proyectos/www/codeigniter/app/Views/list.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1184): CodeIgniter\View\View->render('list', [], true)
+ 5 APPPATH/Controllers/RecargaController.php(54): view('list')
+ 6 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\RecargaController->list()
+ 7 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\RecargaController))
+ 8 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
