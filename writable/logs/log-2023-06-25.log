@@ -1,0 +1,21 @@
+CRITICAL - 2023-06-25 00:53:58 --> Undefined property: App\Controllers\LoginController::$session
+in APPPATH/Controllers/LoginController.php on line 32.
+ 1 APPPATH/Controllers/LoginController.php(32): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\LoginController::$session', '/Users/budspencerdev/informacion/Proyectos/www/recargavirtual/app/Controllers/LoginController.php', 32)
+ 2 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\LoginController->login()
+ 3 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoginController))
+ 4 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-25 00:57:14 --> Undefined variable $session
+in APPPATH/Controllers/RecargaController.php on line 39.
+ 1 APPPATH/Controllers/RecargaController.php(39): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $session', '/Users/budspencerdev/informacion/Proyectos/www/recargavirtual/app/Controllers/RecargaController.php', 39)
+ 2 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\RecargaController->recharge()
+ 3 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\RecargaController))
+ 4 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-25 00:58:14 --> Undefined variable $session
+in APPPATH/Controllers/RecargaController.php on line 40.
+ 1 APPPATH/Controllers/RecargaController.php(40): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $session', '/Users/budspencerdev/informacion/Proyectos/www/recargavirtual/app/Controllers/RecargaController.php', 40)
+ 2 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\RecargaController->recharge()
+ 3 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\RecargaController))
+ 4 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()

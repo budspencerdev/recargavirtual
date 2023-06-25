@@ -10,7 +10,7 @@ class UsuariosModel extends Model
     protected $allowedFields = ['nombres', 'dni','correo','saldo'];
 
     public function searchByDni($dni){
-        return $this->where('dni', $dni)->findAll();
+        return $this->like('dni','%'.$dni.'%')->findAll();
     }
 
     public function updateSaldo($id, $saldo_recarga, $saldo_actual)

@@ -1,0 +1,9 @@
+CRITICAL - 2023-06-20 05:15:22 --> Invalid file: "login.php"
+in SYSTEMPATH/Exceptions/FrameworkException.php on line 33.
+ 1 SYSTEMPATH/View/View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('login.php')
+ 2 SYSTEMPATH/Common.php(1184): CodeIgniter\View\View->render('login', [], true)
+ 3 APPPATH/Controllers/LoginController.php(33): view('login', [...])
+ 4 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\LoginController->login()
+ 5 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoginController))
+ 6 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
